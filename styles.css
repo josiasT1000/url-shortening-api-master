@@ -1,0 +1,29 @@
+body{
+  /* background-color: red; */
+}
+#header{
+  padding: 2em 8em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1500px){
+  body{
+    /* background-color: yellow; */
+  }
+}
+
+@media screen and (max-width: 500px){
+  body{
+    /* background-color: blue; */
+  }
+  #header{
+    padding: 2em 5em;
+  }
+}
