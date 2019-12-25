@@ -1,8 +1,10 @@
 body{
   /* background-color: red; */
+  font-family: 'Poppins', sans-serif;
 }
 h1{
   font-size: 5rem;
+  font-weight: 700;
 }
 p, button{
   font-size: 1.5rem;
@@ -10,24 +12,57 @@ p, button{
 button{
   padding: 0.5em 1.5em;
 }
+#header, #body-child1, #body-child2, #body-child3, #footer{
+  padding-left:8em;
+  padding-right: 8em;
+  margin: 0;
+}
+/* general styling for header part*/
 #header{
-  padding: 2em 8em;
-  max-width: 1400px;
-  margin: auto;
+  padding-top: 3em;
+  padding-bottom: 5em;
 }
-#body{
-  padding: 2em 0 2em 8em;
-  max-width: 1400px;
-  margin: auto;
-}
-#body-child2{
-  clear: both;
-}
+/* general styling for body part*/
 .btn-myColor{
   background-color: hsl(180, 66%, 49%);
   color: white !important;
   border-radius: 2em;
 }
+
+/* styling first-child part */
+#body-child1{
+  padding-bottom: 10em;
+  position: relative;
+}
+#body-child1 div{
+  display: inline-block;
+  width: 50%;
+}
+#first-child{
+  padding-top: 5em;
+}
+.img-wrapper{
+  overflow: hidden;
+  position: absolute;
+}
+.img-wrapper img{
+  position: relative;
+  left: 10em;
+}
+
+.getStarted{
+  font-size: 1.5rem;
+  padding: 0.2em 1.5em;
+}
+/* styling second-child part */
+#body-child2{
+  background-color: hsl(0, 0%, 75%);
+}
+
+
+
+
+
 
 
 .attribution {

@@ -9,6 +9,8 @@
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 
@@ -36,12 +38,17 @@
   </nav>
 
   <div id="body">
+
     <div id="body-child1">
-      <img class="float-md-right" src="images/illustration-working.svg" alt="">
-      <h1>More than just shorter links</h1>
-      <p>Build your brand’s recognition and get detailed insights
-        on how your links are performing.</p>
-      <button class="btn btn-myColor">Get Started</button>
+      <div id="first-child">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand’s recognition and get detailed insights
+          on how your links are performing.</p>
+        <button class="btn btn-myColor getStarted">Get Started</button>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/illustration-working.svg" alt="">
+      </div>
     </div>
 
     <div id="body-child2">
@@ -49,37 +56,37 @@
         <input type="text" name="" value="">
         <button class="myButton" type="submit">Shorten It!</button>
       </form>
-      <ul id="shortenIt-list"> </ul>
-    </div>
 
-    <div id="body-child3">
+      <ul id="shortenIt-list"> </ul>
+
       <h2>Advanced Statistics</h2>
       <p>Track how your links are performing across the web with our
         advanced statistics dashboard.</p>
-    </div>
-    <div>
-      <hr>
-      <div class="statistics-item">
-        <img src="images/icon-brand-recognition.svg" alt="">
-        <h3>Brand Recognition</h3>
-        <p>Boost your brand recognition with each click. Generic links don’t
-          mean a thing. Branded links help instil confidence in your content.</p>
-      </div>
-      <div class="statistics-item">
-        <img src="images/icon-detailed-records.svg" alt="">
-        <h3>Detailed Records</h3>
-        <p>Gain insights into who is clicking your links. Knowing when and where
-          people engage with your content helps inform better decisions.</p>
-      </div>
-      <div class="statistics-item">
-        <img src="images/icon-fully-customizable.svg" alt="">
-        <h3>Fully Customizable</h3>
-        <p>Improve brand awareness and content discoverability through customizable
-          links, supercharging audience engagement.</p>
-      </div>
+
+        <div>
+          <hr>
+          <div class="statistics-item">
+            <img src="images/icon-brand-recognition.svg" alt="">
+            <h3>Brand Recognition</h3>
+            <p>Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+          <div class="statistics-item">
+            <img src="images/icon-detailed-records.svg" alt="">
+            <h3>Detailed Records</h3>
+            <p>Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.</p>
+          </div>
+          <div class="statistics-item">
+            <img src="images/icon-fully-customizable.svg" alt="">
+            <h3>Fully Customizable</h3>
+            <p>Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.</p>
+          </div>
+        </div>
     </div>
 
-    <div>
+    <div id="body-child3">
       <h2>Boost your links today</h2>
       <button class="myButton" type="button" name="button">Get Started</button>
     </div>
@@ -124,6 +131,10 @@
     Coded by <a href="https://github.com/josiasT1000">Essognim Adi</a>.
   </div>
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="scripts.js" charset="utf-8"></script>
 </body>
 
