@@ -1,3 +1,6 @@
+html{
+  /* font-size: 1.5rem; */
+}
 body{
   /* background-color: red; */
   font-family: 'Poppins', sans-serif;
@@ -210,21 +213,20 @@ li{
 }
 
 
-
-
-
-
-
-
 .attribution {
+  background-color: hsl(260, 8%, 14%);
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 @media screen and (max-width: 1500px){
+  html{
+    font-size: 1rem;
+  }
   body{
     /* background-color: yellow; */
   }
