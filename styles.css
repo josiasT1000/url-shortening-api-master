@@ -4,6 +4,50 @@ body{
 #header{
   padding: 2em 8em;
 }
+.img-wrapper{
+  overflow: hidden;
+}
+
+#body > div{
+  padding-left: 8em;
+  padding-right: 8em;
+}
+#body .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+form{
+  background-color: yellow;
+  padding: 1em;
+}
+.form-row  div{
+  padding: 0.5em;
+}
+.form-row  input{
+  width: 100%;
+}
+
+.statistics-container{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.statistics-row{
+  height: 303px;
+}
+.statistics-item{
+  background-color: white;
+}
+hr{
+  border: none;
+  border: 3px solid red;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+
+
+
 
 .attribution {
   font-size: 11px;
