@@ -1,53 +1,82 @@
-body{
+body {
   /* background-color: red; */
 }
-#header{
+
+#header {
   padding: 2em 8em;
 }
-.img-wrapper{
+
+.img-wrapper {
   overflow: hidden;
 }
 
-#body > div{
-  padding-left: 8em;
-  padding-right: 8em;
+#body>div {
+  padding: 3em 8em;
+  /* padding-left: 8em;
+  padding-right: 8em; */
 }
+
 #body .col-md-6 {
   padding-left: 0;
   padding-right: 0;
 }
 
-form{
+form {
   background-color: yellow;
   padding: 1em;
 }
-.form-row  div{
+
+.form-row div {
   padding: 0.5em;
 }
-.form-row  input{
+
+.form-row input {
   width: 100%;
 }
 
-.statistics-container{
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.statistics-row{
+.statistics-row {
   height: 303px;
+  width: 100%;
+  margin: auto;
 }
-.statistics-item{
+
+.statistics-item {
   background-color: white;
+  width: 30%;
+  height: 150px;
+  z-index: 1;
 }
-hr{
+
+hr {
   border: none;
   border: 3px solid red;
   position: absolute;
   top: 150px;
   width: 100%;
+  box-sizing: border-box;
 }
 
+.boost-link {
+  padding: 2em;
+  background-image: url("images/bg-boost-desktop.svg");
+  background-size: cover;
+}
 
+#footer {
+  padding: 2em 8em;
+}
 
+#footer h2, #footer li {
+  color: white;
+}
+
+#footer table th {
+  padding: .5em;
+}
+
+#footer table td {
+  padding: .5em;
+}
 
 .attribution {
   font-size: 11px;
@@ -57,17 +86,19 @@ hr{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media screen and (max-width: 1500px){
-  body{
+
+@media screen and (max-width: 1500px) {
+  body {
     /* background-color: yellow; */
   }
 }
 
-@media screen and (max-width: 500px){
-  body{
+@media screen and (max-width: 500px) {
+  body {
     /* background-color: blue; */
   }
-  #header{
+
+  #header {
     padding: 2em 5em;
   }
 }
