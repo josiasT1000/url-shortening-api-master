@@ -1,121 +1,28 @@
+/* style for normal screen (phone-landscape to large-desktop) */
 body {
-  /* background-color: red; */
+  font-family: 'Poppins', sans-serif;
 }
+h1, h2, h3, .menu-title{
+  font-weight: 700 !important;
+}
+#header, #body > div, #footer, .attribution{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
-
-#header {
-  padding: 2em 8em;
+h2{
+  font-size: 2rem;
 }
-
-.img-wrapper {
-  overflow: hidden;
+p{
+  font-size: 1.3rem;
 }
-
-#body>div {
-  padding: 3em 8em;
-  /* padding-left: 8em;
-  padding-right: 8em; */
-}
-
-#body .col-md-6 {
-  padding-left: 0;
-  padding-right: 0;
-}
-#body
-
-form {
-  /* background-color: yellow; */
-  background-image: url("images/bg-shorten-desktop.svg");
-  padding: 1em;
-}
-
-.form-row div {
-  padding: 0.5em;
-}
-
-.form-row input {
-  width: 100%;
-}
-
-#statistics-container{
-  height: 300px;
-  padding: 0;
-}
-#statistics-row {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-}
-
-.statistics-item {
-  background-color: white;
-  flex-basis: 30%;
-  height: 70%;
-}
-.statistics-item img{
-  position: relative;
-  bottom: 28px;
-  background-color: hsl(260, 8%, 14%);
-  border-radius: 100%;
-  padding: .5em;
-}
-h3{
+li{
   font-size: 1rem;
 }
-.statistics-item p{
-  font-size: .75rem;
-}
-
-hr {
-  border: none;
-  border: 3px solid hsl(180, 66%, 49%);
-  background-color: hsl(180, 66%, 49%);
-  position: absolute;
-  top: 150px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.boost-link {
-  padding: 2em;
-  background-image: url("images/bg-boost-desktop.svg");
-  background-size: cover;
-}
-
-#footer {
-  padding: 2em 8em;
-}
-
-#footer h2, #footer li {
-  color: white;
-}
-
-#footer ul {
-  /* padding: .5em; */
-  list-style-type: none;
-  text-align: left;
-}
-
-#footer .menu-title {
-  padding: 0 0 .5em;
-  font-weight: bold;
-}
-#icon_container{
-  display: inline-flex;
-  align-items: start;
-  justify-content: space-between;
-}
-
-.mylist{
-  background-color: white;
-  margin: 50px 0;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
+/* background class */
 .bg-cyan{
   background-color: hsl(180, 66%, 49%);
   color: white;
@@ -130,12 +37,152 @@ hr {
 .bg-grey{
   background-color: hsl(0, 0%, 75%, 0.3);
 }
+/* ----------------------------------------------------- */
+.btn-100{
+  border-radius: 5em;
+  padding: .5em 1.5em;
+}
+/* styling header */
+#header{
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+/* styling body-part1 */
+#body-part1{
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.brand-text{
+  width: 50%;
+}
+#working-img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+
+/* styling form */
+form {
+  background-image: url("images/bg-shorten-desktop.svg");
+  padding: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-row input {
+  width: 100%;
+}
+/* styling shortenUrl-list part */
+.shortenUrl-list{
+  position: relative;
+}
+.shortenUrl-row{
+  background-color: white;
+  margin: 5px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.shortenUrl, .shortenUrl::selection, .shortenUrl:focus{
+  border: none;
+  color: hsl(180, 66%, 49%);
+  border: none;
+  outline: none;
+}
+.shortenUrl{
+  text-align: right;
+}
+/* ---------------------------------------------------- */
+.h2p{
+  width: 50%;
+  margin: 15px auto;
+}
+/* styling statistics cards */
+#statistics-row {
+  height: 100%;
+}
+
+.statistics-item {
+  background-color: white;
+  border-radius: 10px;
+  flex-basis: 32%;
+  height: 85%;
+}
+.statistics-item img{
+  position: relative;
+  bottom: 28px;
+  background-color: hsl(260, 8%, 14%);
+  border-radius: 100%;
+  padding: .5em;
+}
+.statistics-item h3{
+  font-size: 1.3rem;
+}
+.statistics-item p, p.h2p{
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+hr {
+  border: none;
+  border: 3px solid hsl(180, 66%, 49%);
+  background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* ----------------------------------------------------- */
+.boost-link {
+  padding: 3em;
+  background-image: url("images/bg-boost-desktop.svg");
+  background-size: cover;
+}
+/* ----------------------------------------------------- */
+#footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer h2, #footer li, #footer .menu-title:hover{
+  color: white;
+}
+
+#footer ul {
+  /* padding: .5em; */
+  list-style-type: none;
+  /* text-align: left; */
+}
+
+#footer .menu-title {
+  padding: 0 0 .5em;
+  /* font-weight: bold; */
+}
+#icon-container{
+  display: inline-flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.container-img:hover{
+  background-color: hsl(180, 66%, 49%);
+}
+#footer li:hover{
+  color: hsl(180, 66%, 49%);
+  cursor: pointer;
+}
+path:hover{
+  fill: hsl(180, 66%, 49%);
+  cursor: pointer;
+}
+
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -144,7 +191,7 @@ hr {
   body {
     /* background-color: yellow; */
   }
-  #statistics-container{
+  /* #statistics-container{
     height: auto;
   }
   .statistics-item {
@@ -152,18 +199,18 @@ hr {
     margin: 1.5em 0;
     text-align: center;
     /* padding: 1.5em; */
-  }
-  h3{
+  /* }  */
+  /* h3{
     font-size: 1.75rem;
-  }
-  .statistics-item p{
+  } */
+  /* .statistics-item p{
     font-size: 1rem;
-  }
-  hr{
+  } */
+  /* hr{
     transform: rotate(90deg);
     left: 0;
     top: 50%;
-  }
+  } */
 
   #footer, #footer ul{
     text-align: center;
@@ -173,12 +220,159 @@ hr {
   }
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    /* background-color: blue; */
+@media (min-width: 576px) {
+  /* sytle for small devices (landscape phones) */
+  html{
+    font-size: .5rem;
+  }
+  .logo{
+    width: 75px;
+  }
+    /* ----------------------------------------------- */
+  #body-part1{
+    height: 300px;
+  }
+  /* ----------------------------------------------- */
+  form{
+    height: 60px;
+    bottom: 30px;
+  }
+  .form-div, .form-div input{
+    height: 30px;
+  }
+  .shortenUrl-list{
+    bottom: 30px;
+  }
+  .shortenUrl-btn{
+    width: 50px;
+  }
+  /* ----------------------------------------------- */
+  #statistics-container{
+    height: 260px;
+    padding: 50px 0;
+  }
+  hr{
+    top: 100px;
+  }
+  .statistics-item {
+    border-radius: 5px;
+    height: 80%;
+  }
+  .statistics-item img{
+    bottom: 18px;
+    width: 36px;
+  }
+  .statistics-item p, p.h2p{
+    margin-top: 10px;
+  }
+  /* ----------------------------------------------- */
+}
+
+@media (min-width: 768px){
+  /* style for medium devices (tablets) */
+  html{
+    font-size: .8rem;
+  }
+  .logo{
+    width: 100px;
+  }
+  /* ----------------------------------------------- */
+  #body-part1{
+    height: 375px;
+  }
+  /* ----------------------------------------------- */
+  form{
+    height: 100px;
+    bottom: 50px;
+  }
+  .form-div, .form-div input{
+    height: 50px;
+  }
+  .shortenUrl-list{
+    bottom: 50px;
+  }
+  .shortenUrl-btn{
+    width: 70px;
+  }
+  /* ----------------------------------------------- */
+  #statistics-container{
+    height: 400px;
+    padding: 70px 0;
+  }
+  hr{
+    top: 150px;
+  }
+  .statistics-item {
+    border-radius: 7.5px;
+    height: 80%;
+  }
+  .statistics-item img{
+    bottom: 25px;
+    width: 50px;
+  }
+  .statistics-item p, p.h2p{
+    margin-top: 10px;
+  }
+  /* ----------------------------------------------- */
+}
+
+@media (min-width: 992px){
+  /* style for large devices (desktop) */
+  html{
+    font-size: 1rem;
+  }
+  .logo{
+    width: 125px;
+  }
+  /* ----------------------------------------------- */
+  #body-part1{
+    height: 500px;
+  }
+  /* ----------------------------------------------- */
+  form{
+    height: 150px;
+    bottom: 75px;
+  }
+  .form-div, .form-div input{
+    height: 60px;
+  }
+  .shortenUrl-list{
+    bottom: 75px;
+  }
+  .shortenUrl-btn{
+    width: 100px;
   }
 
-  #header {
-    padding: 2em 5em;
+  /* ----------------------------------------------- */
+  #statistics-container{
+    height: 400px;
+    padding: 70px 0;
   }
+  hr{
+    top: 150px;
+  }
+  .statistics-item {
+    border-radius: 7.5px;
+    height: 80%;
+  }
+  .statistics-item img{
+    bottom: 25px;
+    width: 50px;
+  }
+  .statistics-item p, p.h2p{
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* style for large devices (large desktop) */
+  /* html{
+    font-size: 1.2rem;
+  }
+  .logo{
+    width: 175px;
+  } */
+  /* ----------------------------------------------- */
+  /* ----------------------------------------------- */
+
 }

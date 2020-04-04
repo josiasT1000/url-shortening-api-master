@@ -37,17 +37,20 @@ function shortenUrl(xhttp, url) {
 
 }
 
-var copyButtons = document.querySelectorAll(".copyButton");
-for (var i = 0; i < copyButtons.length; i++) {
-  copyButtons[i].addEventListener("click", function(){
+var shortenUrl_btn = document.querySelectorAll(".shortenUrl-btn");
+for (var i = 0; i < shortenUrl_btn.length; i++) {
+  shortenUrl_btn[i].addEventListener("click", function(){
     var prev = this.previousElementSibling;
+    console.log(prev);
     prev.select();
     prev.setSelectionRange(0, 99999);
     document.execCommand("copy");
     this.innerHTML = "copied!";
-    for (var i = 0; i < copyButtons.length ; i++) {
-      if (this != copyButtons[i]) {
-        copyButtons[i].innerHTML = "copy";
+    this.style.backgroundColor = "hsl(257, 27%, 26%)"
+    for (var i = 0; i < shortenUrl_btn.length ; i++) {
+      if (this != shortenUrl_btn[i]) {
+        shortenUrl_btn[i].innerHTML = "copy";
+        shortenUrl_btn[i].style.backgroundColor = "hsl(180, 66%, 49%)"
       }
     }
 
