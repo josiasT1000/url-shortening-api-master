@@ -201,10 +201,10 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width:576px) {
-  html{
+@media (max-width: 575px) {
+  /* html{
     font-size: .7rem;
-  }
+  } */
   body{
     text-align: center;
   }
@@ -341,7 +341,7 @@ hr {
   }
 }
 
-@media only screen and (max-width:768px) {
+@media (min-width: 576px) {
   /* sytle for small devices (landscape phones) */
   html{
     font-size: .5rem;
@@ -392,7 +392,7 @@ hr {
   }
 }
 
-@media only screen and (max-width:992px){
+@media (min-width: 768px){
   /* style for medium devices (tablets) */
   html{
     font-size: .8rem;
@@ -443,7 +443,7 @@ hr {
   }
 }
 
-@media only screen and (min-width:992px){
+@media (min-width: 992px){
   /* style for large devices (desktop) */
   html{
     font-size: 1rem;
