@@ -201,7 +201,7 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 575px) {
+@media only screen and (max-width:576px) {
   html{
     font-size: .7rem;
   }
@@ -341,7 +341,7 @@ hr {
   }
 }
 
-@media (min-width: 576px) {
+@media only screen and (max-width:768px) {
   /* sytle for small devices (landscape phones) */
   html{
     font-size: .5rem;
@@ -392,7 +392,7 @@ hr {
   }
 }
 
-@media (min-width: 768px){
+@media only screen and (max-width:992px){
   /* style for medium devices (tablets) */
   html{
     font-size: .8rem;
@@ -443,7 +443,7 @@ hr {
   }
 }
 
-@media (min-width: 992px){
+@media only screen and (min-width:992px){
   /* style for large devices (desktop) */
   html{
     font-size: 1rem;
