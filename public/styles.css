@@ -1,6 +1,10 @@
 /* style for normal screen (phone-landscape to large-desktop) */
 body {
   font-family: 'Poppins', sans-serif;
+  max-width: 1500px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: auto;
 }
 h1, h2, h3, .menu-title{
   font-weight: 700 !important;
