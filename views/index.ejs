@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -17,6 +18,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- my stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-mobile.css">
+  <link rel="stylesheet" href="styles-md-desktop.css">
+  <link rel="stylesheet" href="styles-lg-desktop.css">
 
 </head>
 
@@ -43,13 +47,11 @@
 
   <div id="body">
     <div id="body-part1">
-      <div class="brand-text">
-        <h1>More than just shorter links</h1>
-        <p class="py-3">Build your brand’s recognition and get detailed insights
-          on how your links are performing.</p>
-        <button class="btn bg-cyan size-4 btn-100" type="button" name="button">Get Started</button>
-      </div>
       <img id="working-img" src="images/illustration-working.svg" alt="">
+      <h1>More than just shorter links</h1>
+      <p class="py-3">Build your brand’s recognition and get detailed insights
+        on how your links are performing.</p>
+      <button class="btn bg-cyan btn-100 get-started" type="button" name="button">Get Started</button>
     </div>
 
     <div id="body-part2" class="bg-grey">
@@ -65,7 +67,7 @@
       <div class="shortenUrl-row">
         <span class="url"><%= links[i].url %></span>
         <div class="shorten-url-btn">
-          <input class="mr-1 shortenUrl" readonly="true" placeholder=<%= "https://rel.c/"+links[i].hashid %> type="text" name="" value=<%= "https://rel.c/"+links[i].hashid %> >
+          <input class="shortenUrl" readonly="true" placeholder=<%= "https://rel.c/"+links[i].hashid %> type="text" name="" value=<%= "https://rel.c/"+links[i].hashid %> >
           <button class="shortenUrl-btn btn bg-cyan" type="button" name="button">copy</button>
         </div>
       </div>
@@ -76,7 +78,7 @@
       <p class="text-center h2p">Track how your links are performing across the web with our
         advanced statistics dashboard.</p>
 
-      <div id="statistics-container" class="position-relative container-fluid d-flex">
+      <div id="statistics-container" class="position-relative container-fluid">
         <hr>
         <div id="statistics-row" class="row justify-content-between align-self-center m-0">
           <div class="statistics-item align-self-start col-sm-4">
@@ -106,7 +108,7 @@
 
   <div class="boost-link bg-darkViolet text-center">
     <h2 class="text-white py-3">Boost your links today</h2>
-    <button class="btn bg-cyan btn-100" type="button" name="button">Get Started</button>
+    <button class="btn bg-cyan btn-100 get-started" type="button" name="button">Get Started</button>
   </div>
   </div>
 

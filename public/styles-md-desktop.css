@@ -1,0 +1,54 @@
+@media (min-width: 768px){
+  /* style for medium devices (tablets) */
+  html{
+    font-size: .8rem;
+  }
+  .logo{
+    width: 100px;
+  }
+  /* ----------------------------------------------- */
+  /* #body-part1{
+    height: 375px;
+  } */
+  /* ----------------------------------------------- */
+  form{
+    height: 100px;
+    bottom: 50px;
+  }
+  .form-div, .form-div input{
+    height: 50px;
+  }
+  .shortenUrl-list{
+    bottom: 50px;
+  }
+  .shortenUrl-btn{
+    width: 70px;
+  }
+  /* ----------------------------------------------- */
+  #statistics-container{
+    height: 400px;
+    padding: 70px 0;
+  }
+  hr{
+    top: 150px;
+  }
+  .statistics-item {
+    border-radius: 7.5px;
+    height: 80%;
+  }
+  .statistics-item img{
+    bottom: 25px;
+    width: 50px;
+    padding: 10px;
+  }
+  .statistics-item h3{
+    margin-top: 5px;
+  }
+  .statistics-item p, p.h2p{
+    margin-top: 10px;
+  }
+  /* ----------------------------------------------- */
+  .container-img{
+    width: 15px;
+  }
+}
