@@ -1,3 +1,27 @@
+span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.px-sm-X{
+  
+}
+.moove-up-1{
+  /* moove up for form and his list */
+}
+
+.haut-sm-25{
+  height: auto;
+}
+.f-basis-sm-30{
+  flex-basis: 100%;
+}
+.w-sm-30{
+  width: 100%;
+}
+.moove-up-2{
+  /* moove up for icons */
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -6,3 +30,37 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+  .haut-sm-25{
+    height: 450px
+  }
+  .f-basis-sm-30{
+    flex-basis: 30%;
+  }
+  .w-sm-30{
+    width: 30%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .haut-sm-25{
+    height: 400px
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .haut-sm-25{
+    height: 350px
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .haut-sm-25{
+    height: 300px
+  }
+}
+/* make my background color */
+/* make my own list-group and list-group-item */
