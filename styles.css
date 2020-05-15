@@ -1,0 +1,325 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 700;
+  text-align: center;
+}
+
+p, input, button {
+  font-size: 1rem;
+  /* font-weight: 500; */
+}
+
+p {
+  line-height: 1.75;
+  text-align: center;
+}
+
+form {
+  background-image: url("images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+#navbarSupportedContent {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  left: 1rem;
+  background-color: #ffc107;
+  border-radius: 5%;
+}
+
+/* ---------spacing----------------------- */
+.px-X {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.pb-X {
+  padding-bottom: 10rem !important;
+}
+
+/* ----------moving----------------------- */
+.moove-up-form {
+  /* moove up for form and his list */
+  position: relative;
+  bottom: calc(((1.5em + 2rem + 2px) + 5rem + (1rem + 1.25rem))/2);
+}
+
+.moove-up-icon {
+  /* moove up for icons */
+  position: relative;
+  bottom: calc((58px + 3rem)/2);
+}
+
+.moove-right-icon {
+  left: calc(50% - 2rem);
+}
+
+/* ------------text sizing----------------------- */
+.sz-1, .sz-x {
+  font-size: 1.25rem;
+}
+
+.sz-2 {
+  font-size: 1rem;
+}
+
+.sz-3 {
+  font-size: .75rem;
+}
+
+/* ---------------width and height sizing-------- */
+.haut-md-25 {
+  height: auto;
+}
+
+.f-basis-md-30 {
+  flex-basis: 100%;
+}
+
+.w-md-Y {
+  width: 100%;
+}
+
+/* ------------background styling------------------- */
+#design-7 {
+  background-image: url("images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cyan {
+  background-color: hsl(180, 66%, 49%);
+  color: white !important;
+}
+
+.bg-cyan:hover {
+  background-color: hsl(180, 66%, 49%, 0.5);
+  color: white;
+}
+
+.bg-darkViolet {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.bg-grey {
+  background-color: hsl(0, 0%, 75%, 0.3);
+}
+
+.bg-black {
+  background-color: #343a40 !important;
+}
+
+/* ------------icons styling---------------------- */
+.social-network-icons {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.facebook-icon {
+  background-image: url("images/icon-facebook.svg");
+}
+
+.facebook-icon:hover {
+  background-image: url("images/icon-facebook-hover.svg");
+}
+
+.twitter-icon {
+  background-image: url("images/icon-twitter.svg");
+}
+
+.twitter-icon:hover {
+  background-image: url("images/icon-twitter-hover.svg");
+}
+
+.pinterest-icon {
+  background-image: url("images/icon-pinterest.svg");
+}
+
+.pinterest-icon:hover {
+  background-image: url("images/icon-pinterest-hover.svg");
+}
+
+.instagram-icon {
+  background-image: url("images/icon-instagram.svg");
+}
+
+.instagram-icon:hover {
+  background-image: url("images/icon-instagram-hover.svg");
+}
+
+/* ----------------else------------------------ */
+.border-top-X {
+  border-top: 1px solid black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+  /* ------------text sizing----------------------- */
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .sz-1, .sz-x {
+    font-size: 1.25rem;
+  }
+
+  .sz-2 {
+    font-size: 1rem;
+  }
+
+  .sz-3 {
+    font-size: .75rem;
+  }
+
+  /* ---------spacing----------------------- */
+  #navbarSupportedContent {
+    left: 5rem;
+    right: 5rem;
+  }
+
+  .px-X {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  /* ------------icons styling---------------------- */
+  .logo {
+    width: 150px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p {
+    text-align: left;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  #navbarSupportedContent {
+    z-index: 0;
+    position: static;
+    background-color: transparent;
+  }
+
+  /* ------------text sizing----------------------- */
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .sz-1{
+    font-size: 1.25rem;
+  }
+
+  .sz-2 {
+    font-size: 1rem;
+  }
+
+  .sz-3, .sz-x{
+    font-size: .75rem;
+  }
+
+  /* ---------spacing----------------------- */
+  .px-X {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .pl-X {
+    padding-left: 2rem !important;
+  }
+
+  .pb-X {
+    padding-bottom: 3rem !important;
+  }
+
+  /* ----------------------------------- */
+  .border-top-X {
+    border: none;
+  }
+
+  /* ----------moving----------------------- */
+  .moove-up-1 {
+    bottom: calc(((1.5em + 2rem + 2px) + 5rem + (1rem + 1.25rem))/4);
+  }
+
+  /* ---------------width and height sizing-------- */
+  .haut-md-25 {
+    height: 350px
+  }
+
+  .f-basis-md-30 {
+    flex-basis: 30%;
+  }
+
+  .w-md-Y {
+    width: 50%;
+  }
+
+  /* ------------background styling------------------- */
+  #design-7 {
+    background-image: url("images/bg-boost-desktop.svg");
+  }
+
+  form {
+    background-image: url("images/bg-shorten-desktop.svg");
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .haut-md-25 {
+    height: 350px
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .haut-md-25 {
+    height: 300px
+  }
+}
+
+/* make my background color */
+/* make my own list-group and list-group-item */
