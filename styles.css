@@ -2,30 +2,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
-h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 700;
-  text-align: center;
-}
-
-p, input, button {
-  font-size: 1rem;
-  /* font-weight: 500; */
-}
-
 p {
   line-height: 1.75;
-  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 form {
@@ -51,11 +30,10 @@ span {
 }
 
 /* ---------spacing----------------------- */
-.px-X {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+.px-X, .px-sm-X {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
-
 .pb-X {
   padding-bottom: 10rem !important;
 }
@@ -66,32 +44,34 @@ span {
   position: relative;
   bottom: calc(((1.5em + 2rem + 2px) + 5rem + (1rem + 1.25rem))/2);
 }
-
 .moove-up-icon {
   /* moove up for icons */
   position: relative;
   bottom: calc((58px + 3rem)/2);
 }
-
 .moove-right-icon {
   left: calc(50% - 2rem);
 }
 
 /* ------------text sizing----------------------- */
-.sz-1, .sz-x {
+.sz-1{
+  font-size: 2.75rem;
+}
+.sz-2 {
+  font-size: 1.75rem;
+}
+.sz-3, .sz-x {
   font-size: 1.25rem;
 }
-
-.sz-2 {
+.sz-4{
   font-size: 1rem;
 }
-
-.sz-3 {
+.sz-5{
   font-size: .75rem;
 }
 
 /* ---------------width and height sizing-------- */
-.haut-md-25 {
+.haut-25 {
   height: auto;
 }
 
@@ -99,7 +79,7 @@ span {
   flex-basis: 100%;
 }
 
-.w-md-Y {
+.w-sm-Y {
   width: 100%;
 }
 
@@ -176,6 +156,9 @@ span {
 .border-top-X {
   border-top: 1px solid black;
 }
+.ft-bld{
+  font-weight: 700;
+}
 
 .attribution {
   font-size: 11px;
@@ -188,137 +171,158 @@ span {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 576px) {
+  /* ------------background styling------------------- */
+  #design-7 {
+    background-image: url("images/bg-boost-desktop.svg");
+  }
+  form {
+    background-image: url("images/bg-shorten-desktop.svg");
+  }
   /* ------------text sizing----------------------- */
-  h1 {
+  .sz-1{
     font-size: 3.5rem;
   }
-
-  h2 {
+  .sz-2 {
     font-size: 2rem;
   }
-  .sz-1, .sz-x {
+  .sz-3{
     font-size: 1.25rem;
   }
-
-  .sz-2 {
+  .sz-4{
     font-size: 1rem;
   }
-
-  .sz-3 {
+  .sz-5, .sz-x {
     font-size: .75rem;
   }
+  /* ---------------width and height sizing-------- */
+  .haut-25 {
+    height: 1050px;
+  }
 
+  .w-sm-Y {
+    width: 50%;
+  }
   /* ---------spacing----------------------- */
-  #navbarSupportedContent {
-    left: 5rem;
-    right: 5rem;
-  }
-
-  .px-X {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
-  }
-
-  /* ------------icons styling---------------------- */
-  .logo {
-    width: 150px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  p {
-    text-align: left;
-  }
-
-  h3 {
-    text-align: left;
-  }
-
   #navbarSupportedContent {
     z-index: 0;
     position: static;
     background-color: transparent;
   }
-
-  /* ------------text sizing----------------------- */
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-  .sz-1{
-    font-size: 1.25rem;
-  }
-
-  .sz-2 {
-    font-size: 1rem;
-  }
-
-  .sz-3, .sz-x{
-    font-size: .75rem;
-  }
-
-  /* ---------spacing----------------------- */
+  /* #navbarSupportedContent {
+    left: 5rem;
+    right: 5rem;
+  } */
+/* ---------spacing----------------------- */
   .px-X {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
-
+  .px-sm-X{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .pl-X {
-    padding-left: 2rem !important;
+    padding-left: 3rem !important;
   }
-
   .pb-X {
-    padding-bottom: 3rem !important;
+    padding-bottom: 8rem !important;
   }
-
+  /* ------------icons styling---------------------- */
+  .logo {
+    width: 100px;
+  }
   /* ----------------------------------- */
   .border-top-X {
     border: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* ------------text sizing----------------------- */
+  .sz-1 {
+    font-size: 3.5rem;
+  }
+  .sz-2{
+    font-size: 2rem;
+  }
+  .sz-3{
+    font-size: 1.25rem;
+  }
+  .sz-4 {
+    font-size: 1rem;
+  }
+  .sz-5, .sz-x{
+    font-size: .75rem;
   }
 
   /* ----------moving----------------------- */
   .moove-up-1 {
     bottom: calc(((1.5em + 2rem + 2px) + 5rem + (1rem + 1.25rem))/4);
   }
-
-  /* ---------------width and height sizing-------- */
-  .haut-md-25 {
-    height: 350px
+  /* ------------icons styling---------------------- */
+  .logo {
+    width: 150px;
   }
 
   .f-basis-md-30 {
     flex-basis: 30%;
   }
-
-  .w-md-Y {
-    width: 50%;
-  }
-
-  /* ------------background styling------------------- */
-  #design-7 {
-    background-image: url("images/bg-boost-desktop.svg");
-  }
-
-  form {
-    background-image: url("images/bg-shorten-desktop.svg");
+  /* ---------------width and height sizing-------- */
+  .haut-25 {
+    height: 350px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .haut-md-25 {
+  .haut-25 {
     height: 350px
+  }
+  /* ------------text sizing----------------------- */
+  .sz-1{
+    font-size: 3.5rem;
+  }
+  .sz-2 {
+    font-size: 2rem;
+  }
+  .sz-3{
+    font-size: 1.25rem;
+  }
+  .sz-4{
+    /* font-size: 1rem; */
+  }
+  .sz-5, .sz-x {
+    font-size: 1rem;
+  }
+  /* ---------spacing----------------------- */
+  .px-X {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  .pl-X {
+    padding-left: 5rem !important;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .haut-md-25 {
+  .haut-sm-25 {
     height: 300px
+  }
+  /* ---------spacing----------------------- */
+  .px-X {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+  }
+
+  .pl-X {
+    padding-left: 8rem !important;
+  }
+
+  .pb-X {
+    padding-bottom: 3rem !important;
   }
 }
 
